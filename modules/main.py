@@ -130,7 +130,7 @@ async def start(bot, m: Message):
 
 # .....,.....,.......,...,.......,....., .....,.....,.......,...,.......,.....,
 # .....,.....,.......,...,.......,....., .....,.....,.......,...,.......,.....,
-@bot.on_callback_query(filters.regex("back_to_main_menu"))
+@bot.on_callback_query(filters.regex("start1"))
 async def back_to_main_menu(client, callback_query):
     user_id = callback_query.from_user.id
     first_name = callback_query.from_user.first_name
@@ -153,7 +153,7 @@ async def back_to_main_menu(client, callback_query):
 
 # .....,.....,.......,...,.......,....., .....,.....,.......,...,.......,.....,
 # .....,.....,.......,...,.......,....., .....,.....,.......,...,.......,.....,
-@bot.on_callback_query(filters.regex("cmd_command"))
+@bot.on_callback_query(filters.regex("start2"))
 async def cmd(client, callback_query):
     user_id = callback_query.from_user.id
     first_name = callback_query.from_user.first_name
@@ -170,7 +170,7 @@ async def cmd(client, callback_query):
     reply_markup=keyboard
     )
 # .....,.....,.......,...,.......,....., .....,.....,.......,...,.......,.....,
-@bot.on_callback_query(filters.regex("user_command"))
+@bot.on_callback_query(filters.regex("start3"))
 async def help_button(client, callback_query):
   user_id = callback_query.from_user.id
   first_name = callback_query.from_user.first_name
@@ -209,7 +209,7 @@ async def help_button(client, callback_query):
     reply_markup=keyboard
     )
 # .....,.....,.......,...,.......,....., .....,.....,.......,...,.......,.....,
-@bot.on_callback_query(filters.regex("owner_command"))
+@bot.on_callback_query(filters.regex("start 3"))
 async def help_button(client, callback_query):
   user_id = callback_query.from_user.id
   first_name = callback_query.from_user.first_name
@@ -238,7 +238,7 @@ async def help_button(client, callback_query):
 
 # .....,.....,.......,...,.......,....., .....,.....,.......,...,.......,.....,
 # .....,.....,.......,...,.......,....., .....,.....,.......,...,.......,.....,
-@bot.on_callback_query(filters.regex("upgrade_command"))
+@bot.on_callback_query(filters.regex("start4"))
 async def upgrade_button(client, callback_query):
   user_id = callback_query.from_user.id
   first_name = callback_query.from_user.first_name
@@ -273,7 +273,7 @@ async def upgrade_button(client, callback_query):
     )
 # .....,.....,.......,...,.......,....., .....,.....,.......,...,.......,.....,
 # .....,.....,.......,...,.......,....., .....,.....,.......,...,.......,.....,
-@bot.on_callback_query(filters.regex("setttings"))
+@bot.on_callback_query(filters.regex("start5"))
 async def settings_button(client, callback_query):
     caption = "✨ <b>My Premium BOT Settings Panel</b> ✨"
     keyboard = InlineKeyboardMarkup([
@@ -294,7 +294,7 @@ async def settings_button(client, callback_query):
     reply_markup=keyboard
     )
 # .....,.....,.......,...,.......,....., .....,.....,.......,...,.......,.....,
-@bot.on_callback_query(filters.regex("thummbnail_command"))
+@bot.on_callback_query(filters.regex("start6"))
 async def cmd(client, callback_query):
     user_id = callback_query.from_user.id
     first_name = callback_query.from_user.first_name
@@ -311,7 +311,7 @@ async def cmd(client, callback_query):
     reply_markup=keyboard
     )
 # .....,.....,.......,...,.......,....., .....,.....,.......,...,.......,.....,
-@bot.on_callback_query(filters.regex("wattermark_command"))
+@bot.on_callback_query(filters.regex("start7"))
 async def cmd(client, callback_query):
     user_id = callback_query.from_user.id
     first_name = callback_query.from_user.first_name
@@ -328,7 +328,7 @@ async def cmd(client, callback_query):
     reply_markup=keyboard
     )
 # .....,.....,.......,...,.......,....., .....,.....,.......,...,.......,.....,
-@bot.on_callback_query(filters.regex("set_token_command"))
+@bot.on_callback_query(filters.regex("start8"))
 async def cmd(client, callback_query):
     user_id = callback_query.from_user.id
     first_name = callback_query.from_user.first_name
@@ -346,7 +346,7 @@ async def cmd(client, callback_query):
     reply_markup=keyboard
     )
 # .....,.....,.......,...,.......,....., .....,.....,.......,...,.......,.....,
-@bot.on_callback_query(filters.regex("caption_style_command"))
+@bot.on_callback_query(filters.regex("start9"))
 async def handle_caption(client, callback_query):
     user_id = callback_query.from_user.id
     keyboard = InlineKeyboardMarkup([[InlineKeyboardButton("🔙 Back to Settings", callback_data="setttings")]])
@@ -383,7 +383,7 @@ async def handle_caption(client, callback_query):
     finally:
         await input_msg.delete()
 # .....,.....,.......,...,.......,....., .....,.....,.......,...,.......,.....,
-@bot.on_callback_query(filters.regex("file_name_command"))
+@bot.on_callback_query(filters.regex("start10"))
 async def handle_caption(client, callback_query):
     user_id = callback_query.from_user.id
     keyboard = InlineKeyboardMarkup([[InlineKeyboardButton("🔙 Back to Settings", callback_data="setttings")]])
@@ -402,7 +402,7 @@ async def handle_caption(client, callback_query):
     finally:
         await input_msg.delete()
 # .....,.....,.......,...,.......,....., .....,.....,.......,...,.......,.....,
-@bot.on_callback_query(filters.regex("viideo_thumbnail_command"))
+@bot.on_callback_query(filters.regex("start12"))
 async def video_thumbnail(client, callback_query):
     user_id = callback_query.from_user.id
     keyboard = InlineKeyboardMarkup([[InlineKeyboardButton("🔙 Back to Settings", callback_data="thummbnail_command")]])
@@ -427,7 +427,7 @@ async def video_thumbnail(client, callback_query):
     finally:
         await input_msg.delete()
 # .....,.....,.......,...,.......,....., .....,.....,.......,...,.......,.....,
-@bot.on_callback_query(filters.regex("pddf_thumbnail_command"))
+@bot.on_callback_query(filters.regex("start3"))
 async def pdf_thumbnail_button(client, callback_query):
   keyboard = InlineKeyboardMarkup([[InlineKeyboardButton("🔙 Back to Settings", callback_data="thummbnail_command")]])
   caption = ("<b>⋅ This Feature is Not Working Yet ⋅</b>")
@@ -439,7 +439,7 @@ async def pdf_thumbnail_button(client, callback_query):
     reply_markup=keyboard
   )
 # .....,.....,.......,...,.......,....., .....,.....,.......,...,.......,.....,
-@bot.on_callback_query(filters.regex("add_credit_command"))
+@bot.on_callback_query(filters.regex("add"))
 async def credit(client, callback_query):
     user_id = callback_query.from_user.id
     keyboard = InlineKeyboardMarkup([[InlineKeyboardButton("🔙 Back to Settings", callback_data="setttings")]])
@@ -460,7 +460,7 @@ async def credit(client, callback_query):
     finally:
         await input_msg.delete()
 # .....,.....,.......,...,.......,....., .....,.....,.......,...,.......,.....,
-@bot.on_callback_query(filters.regex("cp_token_command"))
+@bot.on_callback_query(filters.regex("cp"))
 async def handle_token(client, callback_query):
     user_id = callback_query.from_user.id
     keyboard = InlineKeyboardMarkup([[InlineKeyboardButton("🔙 Back to Settings", callback_data="set_token_command")]])
@@ -475,7 +475,7 @@ async def handle_token(client, callback_query):
     finally:
         await input_msg.delete()
 # .....,.....,.......,...,.......,....., .....,.....,.......,...,.......,.....,
-@bot.on_callback_query(filters.regex("pw_token_command"))
+@bot.on_callback_query(filters.regex("pw"))
 async def handle_token(client, callback_query):
     user_id = callback_query.from_user.id
     keyboard = InlineKeyboardMarkup([[InlineKeyboardButton("🔙 Back to Settings", callback_data="set_token_command")]])
@@ -490,7 +490,7 @@ async def handle_token(client, callback_query):
     finally:
         await input_msg.delete()
 # .....,.....,.......,...,.......,....., .....,.....,.......,...,.......,.....,
-@bot.on_callback_query(filters.regex("cw_token_command"))
+@bot.on_callback_query(filters.regex("cw"))
 async def handle_token(client, callback_query):
     user_id = callback_query.from_user.id
     keyboard = InlineKeyboardMarkup([[InlineKeyboardButton("🔙 Back to Settings", callback_data="set_token_command")]])
@@ -510,7 +510,7 @@ async def handle_token(client, callback_query):
     finally:
         await input_msg.delete()
 # .....,.....,.......,...,.......,....., .....,.....,.......,...,.......,.....,
-@bot.on_callback_query(filters.regex("video_watermark_command"))
+@bot.on_callback_query(filters.regex("video"))
 async def video_watermark(client, callback_query):
     user_id = callback_query.from_user.id
     keyboard = InlineKeyboardMarkup([[InlineKeyboardButton("🔙 Back to Settings", callback_data="wattermark_command")]])
@@ -531,7 +531,7 @@ async def video_watermark(client, callback_query):
     finally:
         await input_msg.delete()
 # .....,.....,.......,...,.......,....., .....,.....,.......,...,.......,.....,
-@bot.on_callback_query(filters.regex("pdf_watermark_command"))
+@bot.on_callback_query(filters.regex("pdf"))
 async def pdf_watermark_button(client, callback_query):
   keyboard = InlineKeyboardMarkup([[InlineKeyboardButton("🔙 Back to Settings", callback_data="wattermark_command")]])
   caption = ("<b>⋅ This Feature is Not Working Yet ⋅</b>")
@@ -543,7 +543,7 @@ async def pdf_watermark_button(client, callback_query):
     reply_markup=keyboard
   )
 # .....,.....,.......,...,.......,....., .....,.....,.......,...,.......,.....,
-@bot.on_callback_query(filters.regex("quality_command"))
+@bot.on_callback_query(filters.regex("pdf1"))
 async def handle_quality(client, callback_query):
     user_id = callback_query.from_user.id
     keyboard = InlineKeyboardMarkup([[InlineKeyboardButton("🔙 Back to Settings", callback_data="setttings")]])
@@ -591,7 +591,7 @@ async def handle_quality(client, callback_query):
     finally:
         await input_msg.delete()
 # .....,.....,.......,...,.......,....., .....,.....,.......,...,.......,.....,
-@bot.on_callback_query(filters.regex("topic_command"))
+@bot.on_callback_query(filters.regex("topic"))
 async def video_watermark(client, callback_query):
     user_id = callback_query.from_user.id
     keyboard = InlineKeyboardMarkup([[InlineKeyboardButton("🔙 Back to Settings", callback_data="setttings")]])
@@ -612,7 +612,7 @@ async def video_watermark(client, callback_query):
     finally:
         await input_msg.delete()
 # .....,.....,.......,...,.......,....., .....,.....,.......,...,.......,.....,
-@bot.on_callback_query(filters.regex("resset_command"))
+@bot.on_callback_query(filters.regex("resset"))
 async def credit(client, callback_query):
     user_id = callback_query.from_user.id
     keyboard = InlineKeyboardMarkup([[InlineKeyboardButton("🔙 Back to Settings", callback_data="setttings")]])
@@ -645,7 +645,7 @@ async def credit(client, callback_query):
 
 # .....,.....,.......,...,.......,....., .....,.....,.......,...,.......,.....,
 # .....,.....,.......,...,.......,....., .....,.....,.......,...,.......,.....,
-@bot.on_callback_query(filters.regex("feat_command"))
+@bot.on_callback_query(filters.regex("feat"))
 async def feature_button(client, callback_query):
   caption = "**✨ My Premium BOT Features :**"
   keyboard = InlineKeyboardMarkup([
@@ -666,7 +666,7 @@ async def feature_button(client, callback_query):
     reply_markup=keyboard
   )
 # .....,.....,.......,...,.......,....., .....,.....,.......,...,.......,.....,
-@bot.on_callback_query(filters.regex("pin_command"))
+@bot.on_callback_query(filters.regex("pin"))
 async def pin_button(client, callback_query):
   keyboard = InlineKeyboardMarkup([[InlineKeyboardButton("🔙 Back to Feature", callback_data="feat_command")]])
   caption = f"**Auto Pin 📌 Batch Name :**\n\nAutomatically Pins the Batch Name in Channel or Group, If Starting from the First Link."
@@ -678,7 +678,7 @@ async def pin_button(client, callback_query):
       reply_markup=keyboard
   )
 # .....,.....,.......,...,.......,....., .....,.....,.......,...,.......,.....,
-@bot.on_callback_query(filters.regex("watermark_command"))
+@bot.on_callback_query(filters.regex("watermark"))
 async def watermark_button(client, callback_query):
   keyboard = InlineKeyboardMarkup([[InlineKeyboardButton("🔙 Back to Feature", callback_data="feat_command")]])
   caption = f"**Custom Watermark :**\n\nSet Your Own Custom Watermark on Videos for Added Personalization."
@@ -690,7 +690,7 @@ async def watermark_button(client, callback_query):
       reply_markup=keyboard
   )
 # .....,.....,.......,...,.......,....., .....,.....,.......,...,.......,.....,
-@bot.on_callback_query(filters.regex("reset_command"))
+@bot.on_callback_query(filters.regex("reset1"))
 async def restart_button(client, callback_query):
   keyboard = InlineKeyboardMarkup([[InlineKeyboardButton("🔙 Back to Feature", callback_data="feat_command")]])
   caption = f"**🔄 Reset Command:**\n\nIf You Want to Reset or Restart Your Bot, Simply Use Command /reset."
@@ -702,7 +702,7 @@ async def restart_button(client, callback_query):
       reply_markup=keyboard
   )
 # .....,.....,.......,...,.......,....., .....,.....,.......,...,.......,.....,
-@bot.on_callback_query(filters.regex("logs_command"))
+@bot.on_callback_query(filters.regex("logs"))
 async def pin_button(client, callback_query):
   keyboard = InlineKeyboardMarkup([[InlineKeyboardButton("🔙 Back to Feature", callback_data="feat_command")]])
   caption = f"**🖨️ Bot Working Logs:**\n\n◆/logs - Bot Send Working Logs in .txt File."
@@ -714,7 +714,7 @@ async def pin_button(client, callback_query):
       reply_markup=keyboard
     )
 # .....,.....,.......,...,.......,....., .....,.....,.......,...,.......,.....,
-@bot.on_callback_query(filters.regex("custom_command"))
+@bot.on_callback_query(filters.regex("custom"))
 async def custom_button(client, callback_query):
   keyboard = InlineKeyboardMarkup([[InlineKeyboardButton("🔙 Back to Feature", callback_data="feat_command")]])
   caption = f"**🖋️ Custom File Name:**\n\nSupport for Custom Name before the File Extension.\nAdd name ..when txt is uploading"
@@ -726,7 +726,7 @@ async def custom_button(client, callback_query):
       reply_markup=keyboard
   )
 # .....,.....,.......,...,.......,....., .....,.....,.......,...,.......,.....,
-@bot.on_callback_query(filters.regex("titlle_command"))
+@bot.on_callback_query(filters.regex("titlle"))
 async def titlle_button(client, callback_query):
   keyboard = InlineKeyboardMarkup([[InlineKeyboardButton("🔙 Back to Feature", callback_data="feat_command")]])
   caption = f"**Custom Title Feature :**\nAdd and customize titles at the starting\n**NOTE 📍 :** The Titile must enclosed within (Title), Best For appx's .txt file."
@@ -738,7 +738,7 @@ async def titlle_button(client, callback_query):
       reply_markup=keyboard
   )
 # .....,.....,.......,...,.......,....., .....,.....,.......,...,.......,.....,
-@bot.on_callback_query(filters.regex("broadcast_command"))
+@bot.on_callback_query(filters.regex("broadcast"))
 async def pin_button(client, callback_query):
   keyboard = InlineKeyboardMarkup([[InlineKeyboardButton("🔙 Back to Feature", callback_data="feat_command")]])
   caption = f"**📢 Broadcasting Support:**\n\n◆/broadcast - 📢 Broadcast to All Users.\n◆/broadusers - 👁️ To See All Broadcasting User"
@@ -750,7 +750,7 @@ async def pin_button(client, callback_query):
       reply_markup=keyboard
   )
 # .....,.....,.......,...,.......,....., .....,.....,.......,...,.......,.....,
-@bot.on_callback_query(filters.regex("txt_maker_command"))
+@bot.on_callback_query(filters.regex("txt1"))
 async def editor_button(client, callback_query):
   keyboard = InlineKeyboardMarkup([[InlineKeyboardButton("🔙 Back to Feature", callback_data="feat_command")]])
   caption = f"**🤖 Available Commands 🗓️**\n◆/t2t for text to .txt file\n"
@@ -762,7 +762,7 @@ async def editor_button(client, callback_query):
       reply_markup=keyboard
   )
 # .....,.....,.......,...,.......,....., .....,.....,.......,...,.......,.....,
-@bot.on_callback_query(filters.regex("yt_command"))
+@bot.on_callback_query(filters.regex("yt"))
 async def y2t_button(client, callback_query):
   keyboard = InlineKeyboardMarkup([[InlineKeyboardButton("🔙 Back to Feature", callback_data="feat_command")]])
   caption = f"**YouTube Commands:**\n\n◆/y2t - 🔪 YouTube Playlist → .txt Converter\n◆/ytm - 🎶 YouTube → .mp3 downloader\n\n<blockquote><b>◆YouTube → .mp3 downloader\n01. Send YouTube Playlist.txt file\n02. Send single or multiple YouTube links set\neg.\n`https://www.youtube.com/watch?v=xxxxxx\nhttps://www.youtube.com/watch?v=yyyyyy`</b></blockquote>"
@@ -775,7 +775,7 @@ async def y2t_button(client, callback_query):
   )
 
 # .....,.....,.......,...,.......,....., .....,.....,.......,...,.......,.....,
-@bot.on_callback_query(filters.regex("html_command"))
+@bot.on_callback_query(filters.regex("html"))
 async def y2t_button(client, callback_query):
   keyboard = InlineKeyboardMarkup([[InlineKeyboardButton("🔙 Back to Feature", callback_data="feat_command")]])
   caption = f"**HTML Commands:**\n\n◆/t2h - 🌐 .txt → .html Converter"
@@ -793,7 +793,7 @@ async def y2t_button(client, callback_query):
 
 # .....,.....,.......,...,.......,....., .....,.....,.......,...,.......,.....,
 
-@bot.on_message(filters.command(["id"]))
+@bot.on_message(filters.command(["id1"]))
 async def id_command(client, message: Message):
     keyboard = InlineKeyboardMarkup([[InlineKeyboardButton(text="Send to Owner", url=f"tg://openmessage?user_id={OWNER}")]])
     chat_id = message.chat.id
@@ -806,7 +806,7 @@ async def id_command(client, message: Message):
 
 # .....,.....,.......,...,.......,....., .....,.....,.......,...,.......,.....,
 
-@bot.on_message(filters.private & filters.command(["info"]))
+@bot.on_message(filters.private & filters.command(["info1"]))
 async def info(bot: Client, update: Message):
     keyboard = InlineKeyboardMarkup([[InlineKeyboardButton(text="📞 Contact", url=f"tg://openmessage?user_id={OWNER}")]])
     text = (
@@ -827,7 +827,7 @@ async def info(bot: Client, update: Message):
     )
 
 # .....,.....,.......,...,.......,....., .....,.....,.......,...,.......,.....,
-@bot.on_message(filters.command(["logs"]))
+@bot.on_message(filters.command(["logs1"]))
 async def send_logs(client: Client, m: Message):  # Correct parameter name
     try:
         with open("logs.txt", "rb") as file:
@@ -838,7 +838,7 @@ async def send_logs(client: Client, m: Message):  # Correct parameter name
         await m.reply_text(f"**Error sending logs:**\n<blockquote>{e}</blockquote>")
 
 # .....,.....,.......,...,.......,....., .....,.....,.......,...,.......,.....,
-@bot.on_message(filters.command(["reset"]))
+@bot.on_message(filters.command(["reset5"]))
 async def restart_handler(_, m):
     if m.chat.id != OWNER:
         return
@@ -869,37 +869,37 @@ async def cancel_handler(client: Client, m: Message):
             await m.reply_text("**⚡ No active process to cancel.**")
             
 # .....,.....,.......,...,.......,....., .....,.....,.......,...,.......,.....,
-@bot.on_message(filters.command("addauth") & filters.private)
+@bot.on_message(filters.command("add11") & filters.private)
 async def call_add_auth_user(client: Client, message: Message):
     await add_auth_user(client, message)
 
 # .....,.....,.......,...,.......,....., .....,.....,.......,...,.......,.....,
-@bot.on_message(filters.command("users") & filters.private)
+@bot.on_message(filters.command("users1") & filters.private)
 async def call_list_auth_users(client: Client, message: Message):
     await list_auth_users(client, message)
     
 # .....,.....,.......,...,.......,....., .....,.....,.......,...,.......,.....,
-@bot.on_message(filters.command("rmauth") & filters.private)
+@bot.on_message(filters.command("sam") & filters.private)
 async def call_remove_auth_user(client: Client, message: Message):
     await remove_auth_user(client, message)
     
 # .....,.....,.......,...,.......,....., .....,.....,.......,...,.......,.....,
-@bot.on_message(filters.command("broadcast") & filters.private)
+@bot.on_message(filters.command("sam1") & filters.private)
 async def call_broadcast_handler(client: Client, message: Message):
     await broadcast_handler(client, message)
     
 # .....,.....,.......,...,.......,....., .....,.....,.......,...,.......,.....,
-@bot.on_message(filters.command("broadusers") & filters.private)
+@bot.on_message(filters.command("sam3") & filters.private)
 async def call_broadusers_handler(client: Client, message: Message):
     await broadusers_handler(client, message)
     
 # .....,.....,.......,...,.......,....., .....,.....,.......,...,.......,.....,
-@bot.on_message(filters.command("cookies") & filters.private)
+@bot.on_message(filters.command("sam4") & filters.private)
 async def call_cookies_handler(client: Client, m: Message):
     await cookies_handler(client, m)
 
 # .....,.....,.......,...,.......,....., .....,.....,.......,...,.......,.....,
-@bot.on_message(filters.command(["t2t"]))
+@bot.on_message(filters.command(["start0"]))
 async def call_text_to_txt(bot: Client, m: Message):
     await text_to_txt(bot, m)
 
